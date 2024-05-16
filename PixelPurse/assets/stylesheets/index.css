@@ -216,7 +216,7 @@ body .btn-custom-learn {
   margin-bottom: 20px;
 }
 
-/*SMALL SCREEN*/
+/*SMALL SCREEN-----------------------------------------------------------*/
 @media (max-width: 768px) {
   .body-content h1 {
     margin-top: 30px;
@@ -253,4 +253,37 @@ body .btn-custom-learn {
   .section p {
     font-size: 10px;
   }
+}
+
+@media (max-width: 1400px) {
+  .image-container img{
+    max-height: 180px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .image-container img{
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 991px) {
+  .image-container .col-md-6{
+    display: none;
+    
+  }
+  .body-content h1 {
+
+    margin-top: 30px;
+    font-size: 45px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 820px) {
+  .image-container row{
+    max-height: 100px;
+  }
+  
 }
