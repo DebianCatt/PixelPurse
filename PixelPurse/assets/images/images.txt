@@ -1,0 +1,5 @@
+images for the ff only:
+
+index(landing page)
+Dashboard
+settings
