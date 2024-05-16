@@ -67,6 +67,14 @@ body .btn-custom-learn {
   height: 18px;
 }
 
+
+@keyframes scrollRight {
+  0% { transform: translateX(100); }
+  100% { transform: translateX(-50%); }
+}
+
+
+
 /* Customized scrollbar ---------------------------------------------*/
 .overflow-auto::-webkit-scrollbar-track {
   background-color: transparent;
@@ -88,8 +96,8 @@ body .btn-custom-learn {
 
 /*scrollbar width and height */
 .overflow-auto::-webkit-scrollbar {
-  width: 4px; /* crollbar width */
-  height: 7px; /* scrollbar height */
+  width: 0px; /* crollbar width */
+  height: 0px; /* scrollbar height */
 }
 
 .section {
