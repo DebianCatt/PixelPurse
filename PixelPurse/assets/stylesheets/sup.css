@@ -112,4 +112,14 @@
       width: 100%;
     }
   }
+  .half-input {
+    width: 43%; 
+    margin: 0 0%; 
+  }
   
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 8px; 
+  }
