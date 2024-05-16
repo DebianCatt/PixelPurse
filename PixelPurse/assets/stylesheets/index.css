@@ -31,6 +31,10 @@ body h1 {
   color: rgb(0, 140, 255);
 }
 
+body h2 {
+  font-family: "CustomFont";
+}
+
 body h5 {
   margin-left: 105px;
   font-weight: 400;
@@ -48,6 +52,14 @@ body .btn-custom-learn {
   color: rgb(0, 140, 255);
   border-color: rgb(0, 140, 255);
 }
+
+/*side images*/
+.custom-image {
+  width: 200px;
+  height: 200px;
+}
+
+
 
 /*line separator babyyyeehh*/
 .custom-hr {
@@ -212,9 +224,7 @@ body .btn-custom-learn {
     margin-bottom: 20px;
   }
 
-  .image-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns yeah*/
-  }
+
 
   body h5 {
     margin-top: 30px;
