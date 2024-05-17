@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/bootstrap/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="../assets/stylesheets/signup.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Logo and Logoname -->
+          <a class="navbar-brand" href="#">
+            <img
+              src="../assets/icons/logo light blue.png"
+              alt="Logo"
+              width="80"
+              height="50"
+              class="d-inline-block align-top me-2"
+            />
+            PixelPurse
+            
+          </a>
+          <!-- Toggler Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Navigation Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="loginLink">Login/Signup</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!------------------Sign up ----------->
+    <section class="signup">
+        <div class="container">
+            <form class="row g-3">
+                <div class="col=md-5">
+                  <labelclass="form-label">Shop name</label><br>
+                  <input type="text" placeholder="Shop name" style="width: 90%;">
+                </div>
+
+                <div class="col-md-6">
+                  <labelclass="form-label">Firstname</label><br>
+                  <input type="text" placeholder="FirstName">
+                </div>
+
+                <div class="col-md-6">
+                  <label  class="form-label">Lastname</label><br>
+                  <input type="text" placeholder="LastName" style="position: relative; bottom: 10px;">
+                </div>
+
+                <div class="col-md-6">
+                  <label  class="form-label">Email</label><br>
+                  <input type="email" placeholder="Sample_email@email.com">
+                </div>
+
+                <div class="col-md -6">
+                  <label  class="form-label">Contact no</label><br>
+                  <input type="number"placeholder="+63**********">
+                </div>
+
+
+                <div class="col-md-6">
+                  <label  class="form-label">Username</label><br>
+                  <input type="text"  placeholder="Username">
+                </div>
+
+                <div class="col-md-6">
+                  <label  class="form-label">Password</label><br>
+                  <input type="password"  placeholder="Password" style="position: relative;bottom: 3px;">
+                </div>
+
+                <div class="col-md-6">
+                  <label  >Gender</label><br> 
+                  <select>
+                    <option selected>Choose...</option>
+                    <option>Male</option>
+                    <option >Female</option>
+                    <option >Others(please Specify)</option>
+                  </select>
+                  
+                </div>
+                <div class="col-md-6">
+                  <label  class="form-label">others</label><br>
+                  <input type="text"  placeholder="Please specify" style="position: relative;bottom: 12px;">
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input type="checkbox" style="position: relative; bottom: 5px; left: 15px;">
+                    <label class="form-check-label" style="position: relative; left:5%; bottom: 20px;">
+                      i accept the terms of Use & Privacy Policy
+                    </label>
+                  </div>
+
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary" style="position: relative; bottom: 20px; ">Sign up</button>
+                </div>
+
+                <div class="col-12">
+                    <p  style="position: relative; bottom: 25px">Already have an account? log in <a href="#">here </a></p> 
+                </div>
+
+              </form>
+        </div>
+    </section>
+</body>
+</html>
