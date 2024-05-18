@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unlock your digital potential with PixelPurse!</title>
+    <link rel="stylesheet" href="./assets/stylesheets/index.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/set.css" />
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="shortcut icon" type="x-icon" href="./assets/icons/cropd-lightblue-logoPP.png">
+  </head>
+
+  <body>
+<!-------------------------------TOP NAV---------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Logo and Logoname -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./assets/icons/cropd-lightblue-logoPP.png"
+            alt="Logo"
+            width="60"
+            height="50"
+            class="d-inline-block align-top me-2"
+          />
+          <span class="navbar-title align-middle">PixelPurse</span>
+        </a>
+        <!-- Toggler Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="loginLink">Login</a>
+            </li><li class="nav-item">
+              <a class="nav-link" href="../PixelPurse/pages/Signup.html" id="signuplink">Signup</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="try">
+        <h1>Setting</h1>
+      </div><br>
+      <div class="content">
+        <p>My Subscription</p>
+      </div>
+      <div class="paragraph">
+        <p>You are currently not subscribe to PixelPurse Creator.</p>
+      </div><br>
+
+      <div class="content">
+        <p>Account Verification</p>
+      </div>
+
+      <div class="paragraph">
+        <p style="color:blue;"><b>VERIFIED!</b></p>
+      </div><br>
+
+      <div class="content">
+        <p>My Ads</p>
+      </div>
+      <div class="paragraph">
+        <p>Nothing to show here.</p>
+      </div><br>
+
+      <div class="content">
+        <p>Privacy Policy</p>
+      </div>
+      <div class="paragraph">
+        <pre><p>At PixelPurse, we value your privacy and are committed to protecting your personal information.
+This Privacy Policy explains how we collect, use, and disclose information when you use our website,
+products, or services . By using the Services, you consent to the collection,
+use, and disclosure of your information in accordance with this policy.</p></pre>
+      </div><br>
+       
+      
+      <footer class="footer mt-auto py-3" style="background-color: rgb(151, 162, 170);">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="#" class="text-decoration-none">Contact Support?</a>
+            </div>
+            <!-- Icons -->
+            <div class="mb-3">
+              <a href="#" class="text-dark me-3"><img src="./assets/icons/gmail.png" alt="email" style="width: 24px; height: 26px;"></a>
+              <a href="#" class="text-dark me-3"><img src="./assets/icons/facebook.png" alt="facebook" style="width: 24px; height: 22px;"></a>
+              <a href="#" class="text-dark"><img src="./assets/icons/instagram.png" alt="instagram" style="width: 24px; height: 24px;"></a>
+          </div>
+            <!-- text -->
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempora perferendis quos excepturi. Rem molestiae possimus alias facere. Blanditiis iusto porro voluptates dolore consequatur optio veritatis laborum! Voluptatem, eaque ducimus..</div>
+        </div>
+      </footer>
+  
+  
+  
+  
+      <script src="./assets/scripts/index.js"></script>
+      <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script>
+        setTimeout(function() {
+          const container = document.getElementById('creatorsContainer');
+          container.style.animation = 'scrollRight 20s linear infinite'; // 17s = 25s (total duration) - 8s (initial delay)
+        }, 1); // 1000ms = 1s
+  
+  
+  
+        document
+          .getElementById("loginLink")
+          .addEventListener("click", function (event) {
+            event.preventDefault();
+            document.getElementById("loginPopup").style.display = "block"; // Show the login popup
+            document.getElementById("overlay").style.display = "block"; //dark overlay
+          });
+  
+        //when user click outside the form
+        document.getElementById("overlay").addEventListener("click", function () {
+          document.getElementById("loginPopup").style.display = "none"; // Hide the login popup
+          document.getElementById("overlay").style.display = "none"; // Hide the overlay
+        });
+      </script>
+      
+
+</body>
+</html>
