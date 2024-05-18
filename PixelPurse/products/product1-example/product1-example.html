@@ -64,6 +64,7 @@ pls pagod na ako di pa ako natulog-->
       margin-top: 20px;
       text-align: center;
       font-size: 5px;
+      margin-left: 1px;
     }
     }
 
@@ -85,6 +86,22 @@ pls pagod na ako di pa ako natulog-->
       width: 150px;
       height: 50px;
     }
+/*----------------Reviews - Cards-----------------*/
+    .review-card {
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .review-card .user-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+
   </style>
   <body>
 
@@ -300,6 +317,39 @@ pls pagod na ako di pa ako natulog-->
     </div>
 
     <!-------------------------REVIEWS------------------------------------------------>
+    <div class="container mt-5">
+      <h2 class="text-center mb-5" style="font-size: 40px; color: rgb(0, 140, 255)">
+        Reviews
+      </h2>
+  
+      <div class="row">
+        <div class="col-md-6">
+          <div class="review-card">
+            <div class="d-flex align-items-center mb-3">
+              <img src="../../assets/images/sampleuserimg.jpg" alt="User 1 Avatar" class="user-avatar">
+              <h4 class="mb-0">Johnny_Sins</h4>
+            </div>
+            <p class="mb-0">I love the product. Yes it made me come to my home early. 4 stars for now</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="review-card">
+            <div class="d-flex align-items-center mb-3">
+              <img src="../../assets/images/sampleuserimg2.jpg" alt="User 2 Avatar" class="user-avatar">
+              <h4 class="mb-0">Jepoy_Dizon</h4>
+            </div>
+            <p class="mb-0">Tanginamo jepoy dizon ampangit ng pagmumukha mo nakita mo na ba mukha mo sa 
+              salamin ha ampangit mo at tsaka ano yung siansabi mong pulube at tagahugas ako ng pingan 
+              tanginamo village yan. 
+              5 star ka sakin
+            </p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+
 
     <!--------------------------FOOTER----------------------------------------------->
     <footer class="footer mt-auto py-3" style="background-color: rgb(151, 162, 170);">
