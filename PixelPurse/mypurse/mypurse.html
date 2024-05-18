@@ -4,9 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./mypurse.css">
     <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
+    <!---------------------Top nav--------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light transparent-top-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img
+                  src="../assets/icons/cropd-lightblue-logoPP.png"
+                  alt="Logo"
+                  width="60"
+                  height="50"
+                  class="d-inline-block align-top me-2"
+                />
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">MY PURSE</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Hello, User
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" style="width: 200px;">
+                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Inbox</a></li>
+                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Notifications</a></li>
+                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Help & Support</a></li>
+                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Logout</a></li>
+                </ul>
+            </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!------------------INVENTORY------------------------>
+      <h2 class="text-center mt-5" style="font-size: 40px; color: rgb(0, 140, 255)">
+        MY PURSE
+      </h2>
+
+      <div class="container-fluid mt-3">
+    <div class="big-rectangle">
+        <div class="text-center">
+            <p>hellp whatthe fuck is this</p>
+        </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/200" class="card-img-top" alt="Product 1">
+            <div class="card-body">
+                <p class="card-price">Php 100</p>
+              <h5 class="card-title">Product 1</h5>
+              <p class="card-text">by Creator 1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/200" class="card-img-top" ">
+              <div class="card-body">
+                  <p class="card-price">Php 100</p>
+                <h5 class="card-title">Product 1</h5>
+                <p class="card-text">by Creator 1</p>
+              </div>
+            </div>
+          </div>
+        
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <!--------------------------FOOTER----------------------------------------------->
+      <div class="container mt-5">
+        <hr class="my-5 custom-hr" style="color: rgb(0, 140, 255)" />
+    </div>
     
 
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

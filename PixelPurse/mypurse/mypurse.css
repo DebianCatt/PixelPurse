@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url("../assets/fonts/ZtGathaSemiBold-OVaxA.ttf");
+    font-weight: bolder;
+    font-style: normal;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+
+/*-------------------top nav------------------------*/
+.transparent-top-nav {
+    background-color: transparent !important;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  .navbar {
+  margin-left: 0;
+  margin-right: 0;
+  }
+  .navbar-nav .nav-link {
+    font-weight: 500;
+      font-size: 20px;
+      margin-right: 10px;
+  }
+
+  .dropdown-item {
+      color:rgb(34, 186, 197);
+  }
+
+
+
+/*--------------------inventory--------------*/
+h2 {
+    font-family: "CustomFont";
+}
+
+
+
+  .big-rectangle {
+    border-radius: 10px;
+    height: auto;
+    background-color: #82888f;
+    padding: 20px;
+  }
+  .card-img-top {
+    height: 100px;
+    object-fit: cover;
+  }
+  .card-body {
+    padding: 10px;
+  }
+  .card-title {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .card-text {
+    font-size: 0.875rem;
+    margin-bottom: 5px;
+  }
+  .card-price {
+    font-size: 1rem;
+    font-weight: bold;
+  }
