@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url("../fonts/ZtGathaSemiBold-OVaxA.ttf");
+    font-weight: bolder;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "SassyRaccoon";
+    src: url("../fonts/SassyRaccoon-zrXKl.ttf");
+    font-weight: bolder;
+    font-style: normal;
+  }
+  
+  /* body title*/
+  
+  .navbar-title{
+    color: rgb(0, 140, 255);
+    font-family: "SassyRaccoon";
+    font-size: 35px;
+  }
+  
+  body {
+      overflow-x: hidden !important
+  }
+  .bg-white{
+    background-color:whitesmoke !important ;
+ }
