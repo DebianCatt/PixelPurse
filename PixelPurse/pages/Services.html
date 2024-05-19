@@ -1,387 +1,787 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard with Product Cards</title>
-<link rel="stylesheet" href="../assets/stylesheets/dashboard.css">
-</head>
-<body>
-    <div class="navbar">
-        <img src="logo.png" class="logo">
-        <div class="nav-links">
-            <a href="product.html">Product</a>
-            <a href="service.html">Service</a>
-            <a href="#purse">My Purse</a>
-            <a href="#profile">Profile</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/stylesheets/sampledsb.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light transparent-top-nav"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../pages/Products.html">
+          <img
+            src="../assets/icons/cropd-lightblue-logoPP.png"
+            alt="Logo"
+            width="60"
+            height="50"
+            class="d-inline-block align-top me-2"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Products.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Services.html">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../mypurse/mypurse.html">MY PURSE</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Hello, User
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown"
+                style="width: 200px"
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../pages/profile.html"
+                    style="font-size: 20px"
+                    >Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../pages/inbox.html"
+                    style="font-size: 20px"
+                    >Inbox</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../pages/notifications.html"
+                    style="font-size: 20px"
+                    >Notifications</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../pages/setting.html"
+                    style="font-size: 20px"
+                    >Settings</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#" style="font-size: 20px"
+                    >Help & Support</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    style="font-size: 20px"
+                    id="logoutButton"
+                    >Logout</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <img src="template/1.jpg" alt="Profile Picture" class="profile-pic">
+      </div>
+    </nav>
+
+    <div class="container">
+      <img
+        src="../assets/images/buy-prod-cp.jpg"
+        alt="Cover Photo"
+        class="cover-photo mb-4"
+      />
+      <div class="cover-overlay"></div>
+      <div class="header">
+        <h1 class="title">Services</h1>
+        <input
+          type="text"
+          class="form-control search-bar"
+          placeholder="Find Servies..."
+        />
+      </div>
+
+      <div class="row">
+        <!--Prod1----->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+          <div class="card">
+            <a href="../services/Class-Agenda-Presentation/Class-Agenda-Presentation.html">
+              <img
+                src="../services/Class-Agenda-Presentation/images/Class Agenda Presentation.png"
+                class="card-img-top"
+                alt="Product Image"
+              />
+            </a>
+            <div class="card-body p-0">
+              <div class="product-info">
+                <h5 class="product-title mb-0">Class Agenda Ppt</h5>
+                <p class="product-price mb-0">Php 100</p>
+              </div>
+              <div class="username">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/sampleuserimg2.jpg"
+                    alt="Profile Image"
+                    class="profile-img"
+                  />
+                  <a href="link/to/username" class="text-light">
+                    <p class="mb-0">Jepoy_DizonOfficial</p>
+                  </a>
+                </div>
+                <div class="mt-2 card-text">
+                  <img
+                    src="../assets/icons/verified-blue.png"
+                    class="icon-sm"
+                  />
+                  <span class="ms-1">Verified</span>
+                  <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                  <span class="ms-1">4.5 Trust Ratings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Prod2----->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+          <div class="card">
+            <a href="../products/The-Little-Prince/The-Little-Prince.html">
+              <img
+                src="../products/The-Little-Prince/images/image1.jpg"
+                class="card-img-top"
+                alt="Product Image"
+              />
+            </a>
+            <div class="card-body p-0">
+              <div class="product-info">
+                <h5 class="product-title mb-0">The Little Prince - Eb</h5>
+                <p class="product-price mb-0">Php 100</p>
+              </div>
+              <div class="username">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/sampleuserimg2.jpg"
+                    alt="Profile Image"
+                    class="profile-img"
+                  />
+                  <a href="link/to/username" class="text-light">
+                    <p class="mb-0">Jepoy_DizonOfficial</p>
+                  </a>
+                </div>
+                <div class="mt-2 card-text">
+                  <img
+                    src="../assets/icons/verified-blue.png"
+                    class="icon-sm"
+                  />
+                  <span class="ms-1">Verified</span>
+                  <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                  <span class="ms-1">4.5 Trust Ratings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Prod3----->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+          <div class="card">
+            <a href="../products/The-Martian/The-Martian.html">
+              <img
+                src="../products/The-Martian/images/image1.jpg"
+                class="card-img-top"
+                alt="Product Image"
+              />
+            </a>
+            <div class="card-body p-0">
+              <div class="product-info">
+                <h5 class="product-title mb-0">The Martian</h5>
+                <p class="product-price mb-0">Php 100</p>
+              </div>
+              <div class="username">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/sampleuserimg5.png"
+                    alt="Profile Image"
+                    class="profile-img"
+                  />
+                  <a href="link/to/username" class="text-light">
+                    <p class="mb-0">ByteBook_Official</p>
+                  </a>
+                </div>
+                <div class="mt-2 card-text">
+                  <img
+                    src="../assets/icons/verified-blue.png"
+                    class="icon-sm"
+                  />
+                  <span class="ms-1">Verified</span>
+                  <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                  <span class="ms-1">4.8 Trust Ratings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Prod4----->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+          <div class="card">
+            <a href="../products/Weekly-Planner/Weekly-Planner.html">
+              <img
+                src="../products/Weekly-Planner/images/Weekly Planner.png"
+                class="card-img-top"
+                alt="Product Image"
+              />
+            </a>
+            <div class="card-body p-0">
+              <div class="product-info">
+                <h5 class="product-title mb-0">Weekly Planner</h5>
+                <p class="product-price mb-0">Php 100</p>
+              </div>
+              <div class="username">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/sampleuserimg.jpg"
+                    alt="Profile Image"
+                    class="profile-img"
+                  />
+                  <a href="link/to/username" class="text-light">
+                    <p class="mb-0">heyits_ana</p>
+                  </a>
+                </div>
+                <div class="mt-2 card-text">
+                  <img
+                    src="../assets/icons/verified-blue.png"
+                    class="icon-sm"
+                  />
+                  <span class="ms-1">Verified</span>
+                  <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                  <span class="ms-1">4.7 Trust Ratings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Prod5----->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+            <div class="card">
+              <a href="../products/Canadian-Resume/Canadian-Resume.html">
+                <img
+                  src="../products/Canadian-Resume/images/Canadian Resume.png"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+              </a>
+              <div class="card-body p-0">
+                <div class="product-info">
+                  <h5 class="product-title mb-0">Canadian Resume</h5>
+                  <p class="product-price mb-0">Php 200</p>
+                </div>
+                <div class="username">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/sampleuserimg.jpg"
+                      alt="Profile Image"
+                      class="profile-img"
+                    />
+                    <a href="link/to/username" class="text-light">
+                      <p class="mb-0">josh_josh</p>
+                    </a>
+                  </div>
+                  <div class="mt-2 card-text">
+                    <img
+                      src="../assets/icons/verified-blue.png"
+                      class="icon-sm"
+                    />
+                    <span class="ms-1">Verified</span>
+                    <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                    <span class="ms-1">4.9 Trust Ratings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Prod6----->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+            <div class="card">
+              <a href="../products/Subtle-art-of-not-giving-a-fuck/Subtle-art-of-not-giving-a-fuck.html">
+                <img
+                  src="../products/Subtle-art-of-not-giving-a-fuck/images/image1.jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+              </a>
+              <div class="card-body p-0">
+                <div class="product-info">
+                  <h5 class="product-title mb-0">T S A O N G A F</h5>
+                  <p class="product-price mb-0">Php 100</p>
+                </div>
+                <div class="username">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/sampleuserimg2.jpg"
+                      alt="Profile Image"
+                      class="profile-img"
+                    />
+                    <a href="link/to/username" class="text-light">
+                      <p class="mb-0">Jepoy_DizonOfficial</p>
+                    </a>
+                  </div>
+                  <div class="mt-2 card-text">
+                    <img
+                      src="../assets/icons/verified-blue.png"
+                      class="icon-sm"
+                    />
+                    <span class="ms-1">Verified</span>
+                    <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                    <span class="ms-1">4.5 Trust Ratings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Prod7----->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+            <div class="card">
+              <a href="../products/Graduation-Poster/Graduation-Poster.html">
+                <img
+                  src="../products/Graduation-Poster/images/Graduation Poster.png"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+              </a>
+              <div class="card-body p-0">
+                <div class="product-info">
+                  <h5 class="product-title mb-0">Graduation Poster</h5>
+                  <p class="product-price mb-0">Php 300</p>
+                </div>
+                <div class="username">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/sampleuserimg.jpg"
+                      alt="Profile Image"
+                      class="profile-img"
+                    />
+                    <a href="link/to/username" class="text-light">
+                      <p class="mb-0">lee_08</p>
+                    </a>
+                  </div>
+                  <div class="mt-2 card-text">
+                    <img
+                      src="../assets/icons/verified-blue.png"
+                      class="icon-sm"
+                    />
+                    <span class="ms-1">Verified</span>
+                    <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                    <span class="ms-1">4.0 Trust Ratings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--Prod8----->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+            <div class="card">
+              <a href="../products/Daily-Planner/Daily-Planner.html">
+                <img
+                  src="../products/Daily-Planner/images/Daily Planner.png"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+              </a>
+              <div class="card-body p-0">
+                <div class="product-info">
+                  <h5 class="product-title mb-0">Daily Planner</h5>
+                  <p class="product-price mb-0">Php 100</p>
+                </div>
+                <div class="username">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/sampleuserimg.jpg"
+                      alt="Profile Image"
+                      class="profile-img"
+                    />
+                    <a href="link/to/username" class="text-light">
+                      <p class="mb-0">heyits_ana</p>
+                    </a>
+                  </div>
+                  <div class="mt-2 card-text">
+                    <img
+                      src="../assets/icons/verified-blue.png"
+                      class="icon-sm"
+                    />
+                    <span class="ms-1">Verified</span>
+                    <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                    <span class="ms-1">4.7 Trust Ratings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--Prod9----->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+            <div class="card">
+              <a href="link/to/image">
+                <img
+                  src="../products/1984/images/image1.jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+              </a>
+              <div class="card-body p-0">
+                <div class="product-info">
+                  <h5 class="product-title mb-0">1984</h5>
+                  <p class="product-price mb-0">Php 100</p>
+                </div>
+                <div class="username">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/sampleuserimg.jpg"
+                      alt="Profile Image"
+                      class="profile-img"
+                    />
+                    <a href="link/to/username" class="text-light">
+                      <p class="mb-0">Username</p>
+                    </a>
+                  </div>
+                  <div class="mt-2 card-text">
+                    <img
+                      src="../assets/icons/verified-blue.png"
+                      class="icon-sm"
+                    />
+                    <span class="ms-1">Verified</span>
+                    <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                    <span class="ms-1">4.9 Trust Ratings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--Prod10----->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+            <div class="card">
+              <a href="link/to/image">
+                <img
+                  src="../products/1984/images/image1.jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+              </a>
+              <div class="card-body p-0">
+                <div class="product-info">
+                  <h5 class="product-title mb-0">1984</h5>
+                  <p class="product-price mb-0">Php 100</p>
+                </div>
+                <div class="username">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/sampleuserimg.jpg"
+                      alt="Profile Image"
+                      class="profile-img"
+                    />
+                    <a href="link/to/username" class="text-light">
+                      <p class="mb-0">Username</p>
+                    </a>
+                  </div>
+                  <div class="mt-2 card-text">
+                    <img
+                      src="../assets/icons/verified-blue.png"
+                      class="icon-sm"
+                    />
+                    <span class="ms-1">Verified</span>
+                    <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                    <span class="ms-1">4.9 Trust Ratings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--Prod11---->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+            <div class="card">
+              <a href="link/to/image">
+                <img
+                  src="../products/1984/images/image1.jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+              </a>
+              <div class="card-body p-0">
+                <div class="product-info">
+                  <h5 class="product-title mb-0">1984</h5>
+                  <p class="product-price mb-0">Php 100</p>
+                </div>
+                <div class="username">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/sampleuserimg.jpg"
+                      alt="Profile Image"
+                      class="profile-img"
+                    />
+                    <a href="link/to/username" class="text-light">
+                      <p class="mb-0">Username</p>
+                    </a>
+                  </div>
+                  <div class="mt-2 card-text">
+                    <img
+                      src="../assets/icons/verified-blue.png"
+                      class="icon-sm"
+                    />
+                    <span class="ms-1">Verified</span>
+                    <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                    <span class="ms-1">4.9 Trust Ratings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--Prod12----->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+            <div class="card">
+              <a href="link/to/image">
+                <img
+                  src="../products/1984/images/image1.jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+              </a>
+              <div class="card-body p-0">
+                <div class="product-info">
+                  <h5 class="product-title mb-0">1984</h5>
+                  <p class="product-price mb-0">Php 100</p>
+                </div>
+                <div class="username">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/sampleuserimg.jpg"
+                      alt="Profile Image"
+                      class="profile-img"
+                    />
+                    <a href="link/to/username" class="text-light">
+                      <p class="mb-0">Username</p>
+                    </a>
+                  </div>
+                  <div class="mt-2 card-text">
+                    <img
+                      src="../assets/icons/verified-blue.png"
+                      class="icon-sm"
+                    />
+                    <span class="ms-1">Verified</span>
+                    <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                    <span class="ms-1">4.9 Trust Ratings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Prod13----->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+            <div class="card">
+              <a href="link/to/image">
+                <img
+                  src="../products/1984/images/image1.jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+              </a>
+              <div class="card-body p-0">
+                <div class="product-info">
+                  <h5 class="product-title mb-0">1984</h5>
+                  <p class="product-price mb-0">Php 100</p>
+                </div>
+                <div class="username">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/sampleuserimg.jpg"
+                      alt="Profile Image"
+                      class="profile-img"
+                    />
+                    <a href="link/to/username" class="text-light">
+                      <p class="mb-0">Username</p>
+                    </a>
+                  </div>
+                  <div class="mt-2 card-text">
+                    <img
+                      src="../assets/icons/verified-blue.png"
+                      class="icon-sm"
+                    />
+                    <span class="ms-1">Verified</span>
+                    <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                    <span class="ms-1">4.9 Trust Ratings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Prod14----->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+            <div class="card">
+              <a href="link/to/image">
+                <img
+                  src="../products/1984/images/image1.jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+              </a>
+              <div class="card-body p-0">
+                <div class="product-info">
+                  <h5 class="product-title mb-0">1984</h5>
+                  <p class="product-price mb-0">Php 100</p>
+                </div>
+                <div class="username">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/sampleuserimg.jpg"
+                      alt="Profile Image"
+                      class="profile-img"
+                    />
+                    <a href="link/to/username" class="text-light">
+                      <p class="mb-0">Username</p>
+                    </a>
+                  </div>
+                  <div class="mt-2 card-text">
+                    <img
+                      src="../assets/icons/verified-blue.png"
+                      class="icon-sm"
+                    />
+                    <span class="ms-1">Verified</span>
+                    <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                    <span class="ms-1">4.9 Trust Ratings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Prod15----->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+            <div class="card">
+              <a href="link/to/image">
+                <img
+                  src="../products/1984/images/image1.jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+              </a>
+              <div class="card-body p-0">
+                <div class="product-info">
+                  <h5 class="product-title mb-0">1984</h5>
+                  <p class="product-price mb-0">Php 100</p>
+                </div>
+                <div class="username">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/sampleuserimg.jpg"
+                      alt="Profile Image"
+                      class="profile-img"
+                    />
+                    <a href="link/to/username" class="text-light">
+                      <p class="mb-0">Username</p>
+                    </a>
+                  </div>
+                  <div class="mt-2 card-text">
+                    <img
+                      src="../assets/icons/verified-blue.png"
+                      class="icon-sm"
+                    />
+                    <span class="ms-1">Verified</span>
+                    <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                    <span class="ms-1">4.9 Trust Ratings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Prod16----->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+            <div class="card">
+              <a href="link/to/image">
+                <img
+                  src="../products/1984/images/image1.jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+              </a>
+              <div class="card-body p-0">
+                <div class="product-info">
+                  <h5 class="product-title mb-0">1984</h5>
+                  <p class="product-price mb-0">Php 100</p>
+                </div>
+                <div class="username">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/sampleuserimg.jpg"
+                      alt="Profile Image"
+                      class="profile-img"
+                    />
+                    <a href="link/to/username" class="text-light">
+                      <p class="mb-0">Username</p>
+                    </a>
+                  </div>
+                  <div class="mt-2 card-text">
+                    <img
+                      src="../assets/icons/verified-blue.png"
+                      class="icon-sm"
+                    />
+                    <span class="ms-1">Verified</span>
+                    <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                    <span class="ms-1">4.9 Trust Ratings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
     </div>
-    <div class="search-container">
-        <input type="text" placeholder="Search for a product...">
-    </div>
-    <div class="page-title">SERVICE</div>
-    <div class="dashboard">
 
-        <div class="product-card">
-            <img src="service/a.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Cellphone </h2>
-                <div class="price">PHP 1500.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/ako.jpg" alt="Author Image">
-                        <div>
-                            <span>John Doe</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 2.0 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="product-card">
-            <img src="service/b.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Burger </h2>
-                <div class="price">PHP 200.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/3.jpg" alt="Author Image">
-                        <div>
-                            <span>Jackie Chan</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 4.0 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="product-card">
-            <img src="service/c.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Kurtina</h2>
-                <div class="price">PHP 1000.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/ako.jpg" alt="Author Image">
-                        <div>
-                            <span>John Doe</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 4.3 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
- 
-        <div class="product-card">
-            <img src="service/d.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>calendar</h2>
-                <div class="price">PHP 250.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/3.jpg" alt="Author Image">
-                        <div>
-                            <span>Jackie Chan</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 6.0 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="product-card">
-            <img src="service/e.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Yero </h2>
-                <div class="price">PHP 600.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/ako.jpg" alt="Author Image">
-                        <div>
-                            <span>John Doe</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 4.0 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="product-card">
-            <img src="service/f.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Car </h2>
-                <div class="price">PHP 20000.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/ako.jpg" alt="Author Image">
-                        <div>
-                            <span>John Doe</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 2.3 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="service/h.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Cord Wire</h2>
-                <div class="price">PHP 500.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/3.jpg" alt="Author Image">
-                        <div>
-                            <span>Jackie Chan</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 4.1 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="product-card">
-            <img src="service/aa.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Microphone </h2>
-                <div class="price">PHP 200.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/ako.jpg" alt="Author Image">
-                        <div>
-                            <span>John Doe</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 7.0 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="product-card">
-            <img src="service/bbb.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Mic</h2>
-                <div class="price">PHP 2500.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/ako.jpg" alt="Author Image">
-                        <div>
-                            <span>John Doe</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 1.3 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="service/ccc.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Laundry Machine</h2>
-                <div class="price">PHP 30,000.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/3.jpg" alt="Author Image">
-                        <div>
-                            <span>Jackie Chan</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 4.4 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="product-card">
-            <img src="service/ddd.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Washing  Machine </h2>
-                <div class="price">PHP 15,000.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/3.jpg" alt="Author Image">
-                        <div>
-                            <span>Jackie Chan</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 3.0 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="product-card">
-            <img src="service/eee.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Drayer</h2>
-                <div class="price">PHP 2,000</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/ako.jpg" alt="Author Image">
-                        <div>
-                            <span>John Doe</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 2.3 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="service/fff.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Electric Skillet</h2>
-                <div class="price">PHP 5,000.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/3.jpg" alt="Author Image">
-                        <div>
-                            <span>Jackie Chan</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 1.4 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="product-card">
-            <img src="service/ggg.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Knife </h2>
-                <div class="price">PHP 200.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/ako.jpg" alt="Author Image">
-                        <div>
-                            <span>John Dou</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 3.0 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="product-card">
-            <img src="service/iii.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Dinner Plates</h2>
-                <div class="price">PHP 110</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/ako.jpg" alt="Author Image">
-                        <div>
-                            <span>John Doe</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 5.3 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="service/jjj.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Chicken Nuggets</h2>
-                <div class="price">PHP 150.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/3.jpg" alt="Author Image">
-                        <div>
-                            <span>Jackie Chan</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 2.4 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="product-card">
-            <img src="service/kkk.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Bed </h2>
-                <div class="price">PHP 20,000.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/ako.jpg" alt="Author Image">
-                        <div>
-                            <span>John Doe</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 3.0 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="product-card">
-            <img src="service/lll.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Drawer</h2>
-                <div class="price">PHP 1,000</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/3.jpg" alt="Author Image">
-                        <div>
-                            <span>Jackie Chan</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 4.3 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="service/ooo.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Table Laptop</h2>
-                <div class="price">PHP 2,000.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/ako.jpg" alt="Author Image">
-                        <div>
-                            <span>John Doe</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 4.4 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="product-card">
-            <img src="service/sss.jpg" alt="Product Image" class="product-image">
-            <div class="details">
-                <h2>Electric Guitar </h2>
-                <div class="price">PHP 4,500.99</div>
-                <div class="author">
-                    <div class="author-info">
-                        <img src="service/3.jpg" alt="Author Image">
-                        <div>
-                            <span>Jackie Chan</span>
-                            <span class="verified">&#10004; Verified</span>
-                        </div>
-                    </div>
-                    <span class="rating">&#9733; 4.0 Trust Ratings</span>
-                </div>
-            </div>
-        </div>
-
-</body>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/scripts/pageslogouthandler.js"></script>
+  </body>
 </html>
