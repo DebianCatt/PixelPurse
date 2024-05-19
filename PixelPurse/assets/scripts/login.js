@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (user) {
             localStorage.setItem("isLoggedIn", "true");
             localStorage.setItem("username", username);
-            window.location.href = "./pages/home.html";
+            window.location.href = "./pages/Services.html";
         } else {
             messageDiv.textContent = "Invalid username or password.";
         }
