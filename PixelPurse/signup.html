@@ -1,39 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup</title>
+    <link
+      rel="stylesheet"
+      href="../PixelPurse/vendor/bootstrap/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="./assets/stylesheets/sup.css" />
-    <link rel="shortcut icon" type="x-icon" href="./assets/icons/cropd-lightblue-logoPP.png">
+    <link
+      rel="shortcut icon"
+      type="x-icon"
+      href="./assets/icons/cropd-lightblue-logoPP.png"
+    />
+  </head>
+  <body>
+    <div class="" id="container">
+      <img src="/PixelPurse/assets/icons/logo light blue.png" alt="logo" width="120px" height="100px">
+      <h1 style="color: #00bfff; position: relative; top:20px;" >PixelPurses</h1>
+      <div class="header" style="position: relative; right: 160px; background-color: transparent;">
+        <h1>
+          Be a creator and start<br />
+          earning now!
+        </h1>
+      </div>
+      <div class="content">
+        <div class="form-container">
+          <form class="sign-up-form">
+            <h2>Sign Up</h2>
+            <div class="row">
+              <input type="text" placeholder="First Name" class="half-input" />
+              <input type="text" placeholder="Last Name" class="half-input" />
+            </div>
+            <input type="text" placeholder="Username" />
+            <input type="email" placeholder="Email" /> 
+            <input type="password" placeholder="Password" />
+            <div class="terms">
+              <input type="checkbox" id="terms" required />
 
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <h1>Be a creator and start<br> earning now!</h1>
-    </div>
-    <div class="content">
-      <div class="form-container">
-        <form class="sign-up-form">
-          <h2>Sign Up</h2>
-          <div class="row">
-            <input type="text" placeholder="First Name" class="half-input"> 
-        <input type="text" placeholder="Last Name" class="half-input">
-            
-          </div>
-          <input type="text" placeholder="Username">
-          <input type="password" placeholder="Email">
-          <input type="text" placeholder="Password">
-          <div class="terms">
-            <input type="checkbox" id="terms" required>
-            <label for="terms">I accept the Terms of Use & Privacy Policy</label>
-          </div>
-          <button type="submit">Sign Up</button>
-          <p>Already have an account? <a href="/PixelPurse/index.html" style="color:red;">Log in</a></p>
-        </form>
+              <button
+                type="button"
+                class="btn border border-0"
+                data-bs-toggle="modal"
+                data-bs-target="#privacy"
+              >
+                I accept hte terms of use & privacy policy
+              </button>
+            </div>
+            <button type="submit">Sign Up</button>
+            <p>
+              Already have an account?
+              <a href="/PixelPurse/index.html" style="color: red">Log in</a>
+            </p>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</body>
+
+    <!----modal-->
+    <div class="modal" tabindex="-1" id="privacy">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Terms of use & Privacy Policy  </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Terms of Use
+
+              Account: This section details how accounts are created, maintained, and terminated.
+              User: This section defines who is considered a user and their rights and responsibilities.
+              Content: This section covers what kind of content is allowed on the platform and what is prohibited.
+              Term & Condition: This section outlines the legal agreement between you and the service provider.
+              Access & Use: This section explains how you can use the service and any limitations.
+              Intellectual Property: This section clarifies ownership of content and copyrights.
+              Privacy Policy
+              
+              Data & Privacy: This section explains how user data is collected, stored, and used.
+              Information: This section details what information is collected from users and for what purpose.
+              Security: This section outlines the measures taken to protect user data.
+              Cookies: This section explains how cookies are used to track user activity.
+              Third-Party Sharing: This section explains how user data may be shared with third parties.
+              Law: This section explains how the policy complies with relevant data privacy laws.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Accept</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/PixelPurse/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

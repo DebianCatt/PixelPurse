@@ -1,64 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>UserProfile</title>
-        <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
-    </head>
-    <body>
-<!--Navigational Bar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light transparent-top-nav">
-            <div class="container">
-                <a class="navbar-brand" href="#">PixelPurse</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span> 
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Services</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Products</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">My Purse</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Profile</a>
-                          </li>
-                    </ul>
-
-                </div>
-            </div>
-        </nav>
-<!--Cover Photo-->
-         <div class="container">
-            <img src="images/5d_facebook-cover-photo_mock@2x-1.png" class="img-fluid" alt="Basic Image">
-         </div>
-
-<!--Profile Photo-->
-        <div class="container mt-2">
-         <div class="row">                                                                                  
-             <div class="col-sm-4">
-                <img src="images/263996642_580676466369047_8052856802570241551_n.jpg" class="rounded-circle" style="width: 250px; height: 250px;" alt="rounded Image">
-             </div>
-             <div class="col-sm-4">
-                <h5 class="mt-5">Hello! I'm</h5>
-                  <h2 class="text-primary">Jhonny Sins</h2>
-                  <p class="text-primary">@jhonnny_Sins</p> 
-             </div>                 
-         </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock your digital potential with PixelPurse!</title>
+    <link rel="stylesheet" href="/PixelPurse/assets/stylesheets/profile.css">
+    <link rel="stylesheet" href="/PixelPurse/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/PixelPurse/vendor/bootstrap/js/bootstrap.bundle.min.js">
+</head>
+<body>
+     <!---------------top nav-------------->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Logo and Logoname -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="/PixelPurse/assets/icons/cropd-lightblue-logoPP.png"
+              alt="Logo"
+              width="60"
+              height="50"
+              class="d-inline-block align-top me-2"
+            />
+          </a>
+          <!-- Toggler Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Navigation Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRDUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">MY PURSE</a>
+              </li>
+              <li class="new-link">
+                <img src="/PixelPurse/assets/images/pfp.jpg" alt="pfp" width="60" height="50" style="border-radius: 100px;">
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="loginLink">HELLO, PepppaPig2</a>
+              </li>
+            </ul>
+          </div>
         </div>
-<!--Contacts-->
-        <div class="container mt-3">
+      </nav>
+
+      <!-----cover photo------>
+      <section class="cover">
+        <div class="conatainer">
+            <img src="/PixelPurse/assets/images/cover.jpg" width="100%"  height="200">
+        </div>
+      </section>
+      <!------Profile picture-->
+      <section class="profile">
+            <div class="profile">
+                <img src="/PixelPurse/assets/images/pfp.jpg" style="border-radius: 200px;" width="200" height="200">
+                <img src="/PixelPurse/assets/icons/verified-blue.png" width="30" style="position: relative; right: 25px; top: 20px;">
+                <div class="username" style="position: relative; left: 220px; bottom: 100px;">
+                <h1 style="font-weight: 700; font-size: x-large; color: rgb(19, 171, 221);">Hello i'm, <br> Johnny  Sins <br>@johnny_sins</h4>
+                 </div>
+            </div>
+      </section>
+    <!----contacts------>   
+    <section class="contacts">
+        <div class="container mt-3" style="position: relative;bottom: 150px; right: 90px;">
             <div class="row">
                 <div class="col-sm-4">
                     <h2 class="text-primary">Contacts</h2>
                     <h5>Quezon City</h5>
                     <h5>0994 324 6132</h5>
                     <h5>JhonnysCorn@gmail.com</h5>
+                    <input type="button" name="chat" value="Chat" style="width: 200px; border-radius: 20px; background-color: rgb(56, 173, 241);" >
                 </div>
                 <div class="col-sm-8">
                     <h2 class="text-primary">Information</h2>
@@ -67,16 +92,29 @@
                 </div> 
             </div>
         </div>
+
+        <!---Rating----->
+        <div class="rating" style="position: relative; left: 20px; bottom: 150px; font-weight: lighter;">
+            <img src="/pixelpurse/assets/icons/Rating.png"  width="100px">
+            <div style="position: relative;left: 120px; bottom: 80px;">
+            <h1>5.0</h1>
+            </div>
+            <div style="position: relative; left: 180px; bottom: 130px;">
+            <h2>Trust Ratings</h2>
+            <h4>169 views</h4>
+            </div >
+          </div>
+        </div>
 <!--Services-->
-     <div class="container mt-5">
+     <div class="container mt-5" style="position: relative; bottom: 220px;">
         <div class="row">
             <h2 class="text-primary">Services</h2>
             <div class="col-3 mb-2">
                 <div class="card">
-                    <img src="images/the-graphic-design-reference-specification-book.jpg" style="width: 260px; height: 260px;" class="card-img-top" alt="Service 1">
+                    <img src="/PixelPurse/services/Class-Agenda-Presentation/images/Class Agenda Presentation.png" style="width: 260px; height: 260px;" class="card-img-top" alt="Service 1">
                     <div class="card-body">
-                      <h5 class="card-title text-primary">Service 1</h5>
-                      <p class="card-text">This is a short description of service 1.</p>
+                      <h5 class="card-title text-primary">Class agenda presentation</h5>
+                      <p class="card-text">For presentation, reports, and project presentation</p>
                       <a href="#" class="btn btn-primary">Get Now</a>
                     </div>  
                 </div>
@@ -84,10 +122,10 @@
              
             <div class="col-3 mb-2">
                 <div class="card">
-                    <img src="images/the-graphic-design-reference-specification-book.jpg" style="width: 260px; height: 260px;" class="card-img-top" alt="Service 2">
+                    <img src="/PixelPurse/services/Classroom-Rules-Presentation/images/Classroom Rules Presentation.png" style="width: 260px; height: 260px;" class="card-img-top" alt="Service 2">
                     <div class="card-body">
-                      <h5 class="card-title text-primary">Service 2</h5>
-                      <p class="card-text">This is a short description of service 2.</p>
+                      <h5 class="card-title text-primary">Classroom rule presentaition</h5>
+                      <p class="card-text">Rules and regulation in a classroom.</p>
                       <a href="#" class="btn btn-primary">Get Now</a>
                     </div>  
                 </div>
@@ -95,10 +133,10 @@
 
             <div class="col-3 mb-2">
                 <div class="card">
-                    <img src="images/the-graphic-design-reference-specification-book.jpg" style="width: 260px; height: 260px;" class="card-img-top" alt="Service 3">
+                    <img src="/PixelPurse/services/Digital-Education-Presentation/images/Digital Education Presentation.png" style="width: 260px; height: 260px;" class="card-img-top" alt="Service 3">
                     <div class="card-body">
-                      <h5 class="card-title text-primary">Product 3</h5>
-                      <p class="card-text">This is a short description of service 3.</p>
+                      <h5 class="card-title text-primary">Digital learning</h5>
+                      <p class="card-text">A short summary of digital education/learning</p>
                       <a href="#" class="btn btn-primary">Get Now</a>
                     </div>  
                 </div>
@@ -106,15 +144,15 @@
         </div>   
       </div>
 <!--Products-->
-<div class="container mt-5">
+<div class="container mt-5" style="position: relative; bottom: 220px;">
     <div class="row">
         <h2 class="text-primary">Products</h2>
         <div class="col-3 mb-2">
             <div class="card">
-                <img src="images/pngtree-team-photo-template-png-image_5524751.jpg" style="width: 260px; height: 260px;" class="card-img-top" alt="Product 1">
+                <img src="/PixelPurse/products/American-Resume/images/American Resume.png" style="width: 260px; height: 260px;" class="card-img-top" alt="Product 1">
                 <div class="card-body">
-                  <h5 class="card-title text-primary">Product 1</h5>
-                  <p class="card-text">This is a short description of product 1.</p>
+                  <h5 class="card-title text-primary">American Resume</h5>
+                  <p class="card-text">BEst resume to use when starting to apply for a job </p>
                   <a href="#" class="btn btn-primary">Buy Now</a>
                 </div>  
             </div>
@@ -122,10 +160,10 @@
          
         <div class="col-3 mb-2">
             <div class="card">
-                <img src="images/pngtree-team-photo-template-png-image_5524751.jpg" style="width: 260px; height: 260px;" class="card-img-top" alt="Product 2">
+                <img src="/PixelPurse/products/Daily-Planner/images/Daily Planner.png" style="width: 260px; height: 260px;" class="card-img-top" alt="Product 2">
                 <div class="card-body">
-                  <h5 class="card-title text-primary">Product 2</h5>
-                  <p class="card-text">This is a short description of product 2.</p>
+                  <h5 class="card-title text-primary">Daily planner</h5>
+                  <p class="card-text">A planner to make you productive</p>
                   <a href="#" class="btn btn-primary">Buy Now</a>
                 </div>  
             </div>
@@ -133,10 +171,10 @@
 
         <div class="col-3 mb-2">
             <div class="card">
-                <img src="images/pngtree-team-photo-template-png-image_5524751.jpg" style="width: 260px; height: 260px;" class="card-img-top" alt="Product 3">
+                <img src="/PixelPurse/products/Graduation-Poster/images/Graduation Poster.png" style="width: 260px; height: 260px;" class="card-img-top" alt="Product 3">
                 <div class="card-body">
-                  <h5 class="card-title text-primary">Product 3</h5>
-                  <p class="card-text">This is a short description of product 3.</p>
+                  <h5 class="card-title text-primary">Graduation poster</h5>
+                  <p class="card-text">A best and worthy graduation psoter that you can get</p>
                   <a href="#" class="btn btn-primary">Buy Now</a>
                 </div>  
             </div>
@@ -146,5 +184,6 @@
 
   <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"> </script>
 
-    </body>
+    </section>
+</body>
 </html>
