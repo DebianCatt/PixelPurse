@@ -130,21 +130,21 @@ pls pagod na ako di pa ako natulog-->
                 <a class="nav-link" href="#">SERVICES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">MY PURSE</a>
+                <a class="nav-link" href="../../mypurse/mypurse.html">MY PURSE</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Hello, User
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" style="width: 200px;">
-                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Profile</a></li>
+                    <li><a class="dropdown-item" href="../../pages/profile.html" style="font-size: 20px;">Profile</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Inbox</a></li>
-                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Notifications</a></li>
-                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Settings</a></li>
+                    <li><a class="dropdown-item" href="../../pages/inbox.html" style="font-size: 20px;">Inbox</a></li>
+                    <li><a class="dropdown-item" href="../../pages/notifications.html" style="font-size: 20px;">Notifications</a></li>
+                    <li><a class="dropdown-item" href="../../pages/setting.html" style="font-size: 20px;">Settings</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#" style="font-size: 20px;">Help & Support</a></li>
-                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Logout</a></li>
+                    <li><a class="dropdown-item" href="#" style="font-size: 20px;" id="logoutButton">Logout</a></li>
                 </ul>
             </li>
             
@@ -422,5 +422,36 @@ pls pagod na ako di pa ako natulog-->
       </footer>
 
     <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!---for logout function-->
+    <script>
+      function handleLogout() {
+          localStorage.removeItem("isLoggedIn");
+          localStorage.removeItem("username");
+          window.location.href = "../../index.html"; 
+      }
+  
+      // Checker shits
+      document.addEventListener("DOMContentLoaded", function() {
+
+          const logoutButton = document.getElementById("logoutButton");
+          if (logoutButton) {
+              logoutButton.addEventListener("click", handleLogout);
+          }
+
+          const username = localStorage.getItem("username");
+          const isLoggedIn = localStorage.getItem("isLoggedIn");
+          const userSpan = document.getElementById("user");
+  
+          if (isLoggedIn !== "true" || !username) {
+              window.location.href = "../../index.html"; 
+          } else {
+              userSpan.textContent = username;
+          }
+  
+          
+      });
+  </script>
+  
+  
   </body>
 </html>

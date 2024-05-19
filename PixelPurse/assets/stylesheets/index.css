@@ -12,6 +12,12 @@
   font-style: normal;
 }
 
+
+#message {
+  margin-top: 20px;
+  color: red;
+}
+
 /* body title*/
 
 .navbar-title{

@@ -62,7 +62,7 @@
 <!--------------------------------LOGIN FORM POPUP ------------------------>
     <div class="popup-container" id="loginPopup">
       <h4 style="color: rgb(22, 214, 228)">Login to your Account</h4>
-      <form class="login-form">
+      <form class="login-form" id="loginForm">
         <div class="mb-3">
           <label for="username" class="form-label">Username</label>
           <input
@@ -85,6 +85,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
       </form>
+      <div id="message"></div>
     </div>
     <div class="overlay" id="overlay"></div>
 
@@ -575,29 +576,9 @@
 
 
 
+    <script src="./assets/scripts/login.js"></script>
     <script src="./assets/scripts/index.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script>
-      setTimeout(function() {
-        const container = document.getElementById('creatorsContainer');
-        container.style.animation = 'scrollRight 20s linear infinite'; // 17s = 25s (total duration) - 8s (initial delay)
-      }, 1); // 1000ms = 1s
-
-
-
-      document
-        .getElementById("loginLink")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          document.getElementById("loginPopup").style.display = "block"; // Show the login popup
-          document.getElementById("overlay").style.display = "block"; //dark overlay
-        });
-
-      //when user click outside the form
-      document.getElementById("overlay").addEventListener("click", function () {
-        document.getElementById("loginPopup").style.display = "none"; // Hide the login popup
-        document.getElementById("overlay").style.display = "none"; // Hide the overlay
-      });
-    </script>
+    
   </body>
 </html>
