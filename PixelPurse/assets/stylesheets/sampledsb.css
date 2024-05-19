@@ -1,0 +1,128 @@
+.transparent-top-nav {
+    background-color: transparent !important;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  .navbar {
+  margin-left: 0;
+  margin-right: 0;
+  }
+  .navbar-nav .nav-link {
+      color: rgb(224, 224, 224);
+      font-size: 20px;
+      margin-right: 10px;
+  }
+
+  .dropdown-item {
+      color:rgb(34, 186, 197);
+  }
+
+
+  .cover-photo {
+    width: 100%;
+    height: auto;
+    position: relative; /* Required for absolute positioning of gradient */
+  }
+
+  .cover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.5));
+  }
+
+
+
+
+
+.cover-photo {
+    width: 100%;
+    height: 500px;
+    max-height: 500px;
+    object-fit: cover;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+h1 {
+    color: rgb(0, 140, 255);
+}
+
+.search-bar {
+    width: 300px;
+}
+
+
+/*-----prod card--------------------------------*/
+.prodcard {
+    margin-bottom: 15px;
+}
+
+.prodcard .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.prodcard .card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+
+.prodcard .card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.product-info {
+    
+    margin-bottom: 2px;
+    background-color: rgb(167, 171, 173);
+    padding: 10px;
+
+}
+
+    .card-img-top,
+    .username a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .profile-img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+    .username {
+        font-size: 20px;
+        background-color: rgb(0, 140, 255);
+        padding: 10px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    .icon-sm {
+        width: 18px;
+        height: 18px;
+    }
+    .card-text {
+        font-size: 13px;
+        color: white;
+      }
+
+    
+@media (max-width: 768px) {
+    .prodcard .card {
+        width: 100%;
+    }
+}

@@ -85,8 +85,8 @@ body .btn-custom-learn {
     0,
     140,
     255
-  ); /* Example of a custom color using hexadecimal value */
-  color: white; /* Set text color to white for better contrast */
+  ); 
+  color: white;
 }
 
 .card-body h4 {
