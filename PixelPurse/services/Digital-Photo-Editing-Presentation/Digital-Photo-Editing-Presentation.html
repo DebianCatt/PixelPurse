@@ -1,11 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Photo Editing Presentation</title>
+    <link
+      rel="stylesheet"
+      href="../../vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./product1.css" />
+    <link
+      rel="shortcut icon"
+      type="x-icon"
+      href="../../assets/icons/cropd-lightblue-logoPP.png"
+    />
+  </head>
+  <style>
+    /*-------------------top nav------------------------*/
+    .transparent-top-nav {
     
-</body>
+      backdrop-filter: blur(10px);
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .navbar-nav .nav-link {
+      color: rgb(109, 109, 109);
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    .dropdown-item {
+      color: rgb(34, 186, 197);
+    }
+
+
+    /*---- carousel----------------*/
+
+    .carousel-image {
+      width: 100%;
+      height: 100% !important;
+      object-fit: cover;
+    }
+
+    /*------------------body contents after cover photo------------------------*/
+    @media (max-width: 700px) {
+      h2 {
+        text-align: center;
+        font-size: 40px;
+        margin-left: 1px;
+      }
+    }
+    .icon-sm {
+      width: 18px;
+      height: 18px;
+    }
+    .carousel-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    h3 {
+      font-size: 50px;
+    }
+    .btn {
+      width: 150px;
+      height: 50px;
+    }
+    /*----------------Reviews - Cards-----------------*/
+    .review-card {
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .review-card .user-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+  </style>
+  <body>
+    <!---------------------Top nav--------------->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light transparent-top-nav"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="../../assets/icons/cropd-lightblue-logoPP.png"
+            alt="Logo"
+            width="60"
+            height="50"
+            class="d-inline-block align-top me-2"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MY PURSE</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Hello, User
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown"
+                style="width: 200px"
+              >
+                <li>
+                  <a class="dropdown-item" href="#" style="font-size: 20px"
+                    >Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#" style="font-size: 20px"
+                    >Inbox</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" style="font-size: 20px"
+                    >Notifications</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" style="font-size: 20px"
+                    >Settings</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#" style="font-size: 20px"
+                    >Help & Support</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" style="font-size: 20px"
+                    >Logout</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-----------------------body contents------------------------------->
+    
+
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Photo Slider -->
+        <div class="col-12 mb-5">
+          <div
+            id="photoCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner p-2">
+              <!-- First Slide -->
+              <div class="carousel-item active">
+                <img
+                  src="./images/Digital Photo Editing Presentation.png"
+                  class="d-block w-100 carousel-image"
+                  alt="Photo 1"
+                />
+              </div>
+              <!-- Second Slide -->
+              <div class="carousel-item">
+                <img
+                  src="./images/Digital Photo Editing Presentation1.png"
+                  class="d-block w-100 carousel-image"
+                  alt="Photo 2"
+                />
+              </div>
+              <!-- Third Slide -->
+              <div class="carousel-item">
+                <img
+                  src="./images/Digital Photo Editing Presentation2.png"
+                  class="d-block w-100 carousel-image"
+                  alt="Photo 3"
+                />
+              </div>
+            </div>
+            <!-- Previous and Next Buttons -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#photoCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#photoCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+<!--------------PRODUCT TITLE-------------->
+      <h2 style="color:rgb(0, 140, 255)">Digital Photo Editing Presentation</h2>
+
+      <div class="row mt-3">
+        <!-- Left Section -->
+        <div class="col-md-6">
+          <div class="card-body">
+            <!-- Profile Picture and User Name in the same line -->
+            <div class="d-flex align-items-center">
+              <!-- Circular Profile Picture -->
+              <img
+                src="../../assets/images/sampleuserimg.jpg"
+                class="rounded-circle me-2"
+                alt="User Profile Picture"
+                style="width: 50px; height: 50px"
+              />
+              <!-- User Name -->
+              <h4 class="card-title mb-0">Shey23_</h4>
+            </div>
+            <!-- Additional Information -->
+            <div class="flex-grow-1">
+              <p class="card-text">
+                <img
+                  src="../../assets/icons/verified-blue.png"
+                  class="icon-sm"
+                  alt="Verified Icon"
+                />
+                <span class="ms-1">Verified</span>
+                <img
+                  src="../../assets/icons/Rating.png"
+                  class="icon-sm ms-3"
+                  alt="Rating Icon"
+                />
+                <span class="ms-1">4.0 Trust Ratings</span>
+              </p>
+            </div>
+            <!-- Product Details -->
+            <div class="mt-4">
+              <p>
+                This service involves a presentation focused on teaching or demonstrating digital 
+                photo editing techniques. It might cover topics like basic editing tools, advanced 
+                editing techniques, software tutorials, and tips for enhancing photos.
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="col-md-6 mt-4">
+          <div class="mt-5">
+            <h3>Starts at Php 100</h3>
+            <button class="btn btn-primary mt-3">Contact me</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <hr class="my-5 custom-hr" style="color: rgb(0, 140, 255)" />
+    </div>
+
+    <!-------------------------REVIEWS------------------------------------------------>
+    <div class="container mt-5">
+      <h2
+        class="text-center mb-5"
+        style="font-size: 40px; color: rgb(0, 140, 255)"
+      >
+        Reviews (2)
+      </h2>
+
+      <div class="row">
+        <!---Review 1-->
+        <div class="col-md-6">
+          <div class="review-card">
+            <img src="../../assets/icons/Rating.png" class="icon-sm" />
+            <img src="../../assets/icons/Rating.png" class="icon-sm" />
+            <img src="../../assets/icons/Rating.png" class="icon-sm" />
+            <img src="../../assets/icons/Rating.png" class="icon-sm" />
+
+            <div class="d-flex align-items-center mb-3 mt-3">
+              <img
+                src="../../assets/images/sampleuserimg.jpg"
+                alt="User 1 Avatar"
+                class="user-avatar"
+              />
+              <h4 class="mb-0">Rachelle May</h4>
+            </div>
+            <p class="mb-0">
+                Highly recommended super sulit ng mga products
+            </p>
+          </div>
+        </div>
+        <!---Review 2-->
+        <div class="col-md-6">
+          <div class="review-card">
+            <img src="../../assets/icons/Rating.png" class="icon-sm" />
+            <img src="../../assets/icons/Rating.png" class="icon-sm" />
+            <img src="../../assets/icons/Rating.png" class="icon-sm" />
+            <img src="../../assets/icons/Rating.png" class="icon-sm" />
+            <img src="../../assets/icons/Rating.png" class="icon-sm" />
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="../../assets/images/sampleuserimg2.jpg"
+                alt="User 2 Avatar"
+                class="user-avatar"
+              />
+              <h4 class="mb-0">Justine Sha</h4>
+            </div>
+            <p class="mb-0">
+                Super affordable and sulit talaga ang digital product
+            </p>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------FOOTER----------------------------------------------->
+    <footer
+      class="footer mt-auto py-3"
+      style="background-color: rgb(151, 162, 170)"
+    >
+      <div class="container text-center">
+        <div class="mb-3">
+          <p>Contact Support?</p>
+        </div>
+        <!-- Icons -->
+        <div class="mb-3">
+          <a href="#" class="text-dark me-3"
+            ><img
+              src="../../assets/icons/gmail.png"
+              alt="email"
+              style="width: 24px; height: 26px"
+          /></a>
+          <a href="#" class="text-dark me-3"
+            ><img
+              src="../../assets/icons/facebook.png"
+              alt="facebook"
+              style="width: 24px; height: 22px"
+          /></a>
+          <a href="#" class="text-dark"
+            ><img
+              src="../../assets/icons/instagram.png"
+              alt="instagram"
+              style="width: 24px; height: 24px"
+          /></a>
+        </div>
+        Get in touch to our technical support team for help troubleshooting software issues and technical queries. 
+          PixelPurse dedicated to ensuring your experience with our products is seamless and enjoyable
+        </div>
+      </div>
+    </footer>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
