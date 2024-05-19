@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url("../fonts/ZtGathaSemiBold-OVaxA.ttf");
+    font-weight: bolder;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "SassyRaccoon";
+    src: url("../fonts/SassyRaccoon-zrXKl.ttf");
+    font-weight: bolder;
+    font-style: normal;
+  }
+  
+  /* body title*/
+  
+  .navbar-title{
+    color: rgb(0, 140, 255);
+    font-family: "SassyRaccoon";
+    font-size: 35px;
+  }
+  
+  body{
+    overflow: hidden;
+  }
+ 
+
+  #field{
+    background-color: rgb(151, 148, 148);
+    border-radius: 5px;
+    height: 500px;
+    width: 500px;
+
+    position: relative;
+
+    left: 100px;
+  }
+
+  .MV{
+    color: #00bfff ;
+    position: relative;
+
+    left: 900px;
+    bottom: 400px;
+  }
+
+  #icons{
+    position: relative;
+
+    bottom: 400px;
+    left: 100px;
+  }
