@@ -1,4 +1,9 @@
-.container {
+body{
+  overflow: hidden;
+  margin: 0;
+}
+
+#container {
     display: flex;
     height: 100vh;
   }
@@ -54,7 +59,8 @@
   }
   
   .sign-up-form input[type="text"],
-  .sign-up-form input[type="password"] {
+  .sign-up-form input[type="password"],
+  .sign-up-form input[type="email"] {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
