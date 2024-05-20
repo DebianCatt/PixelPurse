@@ -9,6 +9,10 @@
     height: 100%;
   }
 
+  body {
+    display: flex;
+    flex-direction: column;
+  }
 
 /*-------------------top nav------------------------*/
 .transparent-top-nav {

@@ -21,8 +21,38 @@
   }
   
   body {
-      overflow-x: hidden !important
+      overflow-x: hidden !important;
+      display: flex;
+      flex-direction: column;
   }
   .bg-white{
     background-color:whitesmoke !important ;
  }
+
+ html, body {
+  height: 100%;
+}
+
+
+/*-------------------top nav------------------------*/
+.transparent-top-nav {
+  background-color: transparent !important;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.navbar {
+margin-left: 0;
+margin-right: 0;
+}
+.navbar-nav .nav-link {
+  font-weight: 500;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.dropdown-item {
+    color:rgb(34, 186, 197);
+}
