@@ -12,53 +12,111 @@
 
   <body>
 <!-------------------------------TOP NAV---------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <!-- Logo and Logoname -->
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="./assets/icons/cropd-lightblue-logoPP.png"
-            alt="Logo"
-            width="60"
-            height="50"
-            class="d-inline-block align-top me-2"
-          />
-          <span class="navbar-title align-middle">PixelPurse</span>
-        </a>
-        <!-- Toggler Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+<nav
+class="navbar navbar-expand-lg navbar-light bg-light transparent-top-nav"
+>
+<div class="container-fluid">
+  <a class="navbar-brand" href="#">
+    <img
+      src="../assets/icons/cropd-lightblue-logoPP.png"
+      alt="Logo"
+      width="60"
+      height="50"
+      class="d-inline-block align-top me-2"
+    />
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/Products.html">PRODUCTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/Services.html">SERVICES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../mypurse/mypurse.html">MY PURSE</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
           aria-expanded="false"
-          aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navigation Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" id="loginLink">Login</a>
-            </li><li class="nav-item">
-              <a class="nav-link" href="../PixelPurse/pages/Signup.html" id="signuplink">Signup</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+          Hello, User
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdown"
+          style="width: 200px"
+        >
+          <li>
+            <a
+              class="dropdown-item"
+              href="../pages/profile.html"
+              style="font-size: 20px"
+              >Profile</a
+            >
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a
+              class="dropdown-item"
+              href="../pages/inbox.html"
+              style="font-size: 20px"
+              >Inbox</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-item"
+              href="../pages/notifications.html"
+              style="font-size: 20px"
+              >Notifications</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-item"
+              href="../pages/setting.html"
+              style="font-size: 20px"
+              >Settings</a
+            >
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="#" style="font-size: 20px"
+              >Help & Support</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-item"
+              href="#"
+              style="font-size: 20px"
+              id="logoutButton"
+              >Logout</a
+            >
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
     
     <div class="try">
         <h1>Setting</h1>
@@ -98,47 +156,26 @@ use, and disclosure of your information in accordance with this policy.</p></pre
       
       <footer class="footer mt-auto py-3" style="background-color: rgb(151, 162, 170);">
         <div class="container text-center">
-            <div class="mb-3">
-                <a href="#" class="text-decoration-none">Contact Support?</a>
-            </div>
+          <div class="mb-3">
+            <p>Contact Support?</p>
+          </div>
             <!-- Icons -->
             <div class="mb-3">
-              <a href="#" class="text-dark me-3"><img src="./assets/icons/gmail.png" alt="email" style="width: 24px; height: 26px;"></a>
-              <a href="#" class="text-dark me-3"><img src="./assets/icons/facebook.png" alt="facebook" style="width: 24px; height: 22px;"></a>
-              <a href="#" class="text-dark"><img src="./assets/icons/instagram.png" alt="instagram" style="width: 24px; height: 24px;"></a>
+              <a href="#" class="text-dark me-3"><img src="../../pixelpurse/assets/icons/gmail.png" alt="email" style="width: 24px; height: 26px;"></a>
+              <a href="#" class="text-dark me-3"><img src="../../pixelpurse/assets/icons/facebook.png" alt="facebook" style="width: 24px; height: 22px;"></a>
+              <a href="#" class="text-dark"><img src="../../pixelpurse/assets/icons/instagram.png" alt="instagram" style="width: 24px; height: 24px;"></a>
           </div>
-            <!-- text -->
-            <div>Get in touch to our technical support team for help troubleshooting software issues and technical queries. PixelPurse dedicated to ensuring your experience with our products is seamless and enjoyable</div>
-        </div>
+          Get in touch to our technical support team for help troubleshooting software issues and technical queries. 
+          PixelPurse dedicated to ensuring your experience with our products is seamless and enjoyable
+      </div>
       </footer>
   
   
   
   
-      <script src="./assets/scripts/index.js"></script>
-      <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script>
-        setTimeout(function() {
-          const container = document.getElementById('creatorsContainer');
-          container.style.animation = 'scrollRight 20s linear infinite'; // 17s = 25s (total duration) - 8s (initial delay)
-        }, 1); // 1000ms = 1s
-  
-  
-  
-        document
-          .getElementById("loginLink")
-          .addEventListener("click", function (event) {
-            event.preventDefault();
-            document.getElementById("loginPopup").style.display = "block"; // Show the login popup
-            document.getElementById("overlay").style.display = "block"; //dark overlay
-          });
-  
-        //when user click outside the form
-        document.getElementById("overlay").addEventListener("click", function () {
-          document.getElementById("loginPopup").style.display = "none"; // Hide the login popup
-          document.getElementById("overlay").style.display = "none"; // Hide the overlay
-        });
-      </script>
+      <script src="../../pixelPurse/assets/scripts/login.js"></script>
+      <script src="../../pixelPurse/assets/scripts/index.js"></script>
+      <script src="../../pixelPurse/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       
 
 </body>
