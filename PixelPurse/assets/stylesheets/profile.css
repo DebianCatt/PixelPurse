@@ -29,3 +29,48 @@
     bottom: 50px;
     left: 20px;
   }
+
+  
+
+/*-------------------top nav------------------------*/
+.transparent-top-nav {
+  background-color: transparent !important;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.navbar {
+margin-left: 0;
+margin-right: 0;
+}
+.navbar-nav .nav-link {
+    color: rgb(224, 224, 224);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.dropdown-item {
+    color:rgb(34, 186, 197);
+}
+.container{
+  
+/*----cover photo--------------------*/
+
+.cover-photo {
+  width: 100%;
+  height: auto;
+  position: relative; /* Required for absolute positioning of gradient */
+}
+
+.cover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%; /* Adjust the height of the overlay as needed */
+  background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.5));
+}
+
+}

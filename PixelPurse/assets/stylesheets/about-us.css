@@ -21,7 +21,7 @@
   }
   
   body{
-    overflow: hidden;
+    overflow-x: hidden;
   }
  
 
@@ -49,4 +49,13 @@
 
     bottom: 400px;
     left: 100px;
+  }
+
+  footer{
+
+    position: relative;
+
+    
+
+   
   }

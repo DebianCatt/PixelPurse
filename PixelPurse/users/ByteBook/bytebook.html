@@ -6,63 +6,149 @@
     <title>Unlock your digital potential with PixelPurse!</title>
     <link rel="stylesheet" href="../../assets/stylesheets/profile.css">
     <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
-</head>
-<body>
-     <!---------------top nav-------------->
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <!-- Logo and Logoname -->
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="../../assets/icons/cropd-lightblue-logoPP.png"
-              alt="Logo"
-              width="60"
-              height="50"
-              class="d-inline-block align-top me-2"
-            />
-          </a>
-          <!-- Toggler Button -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <!-- Navigation Links -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="../../pages/Products.html">PRODUCTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../pages/Services.html">SERVVICES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../mypurse/mypurse.html">MY PURSE</a>
-              </li>
-              <li class="new-link">
-                <img src="../ByteBook/images/sampleuserimg5.png" alt="pfp" width="60" height="50" style="border-radius: 100px;">
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" id="loginLink">HELLO, Jepoy Dizon</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+ 
+    <style>
 
-      <!-----cover photo------>
-      <section class="cover">
-        <div class="conatainer">
-            <img src="../ByteBook/images/SCoverphoto.jpg" width="100%"  height="200">
-        </div>
-      </section>
+
+      /*-------------------top nav------------------------*/
+      .transparent-top-nav {
+            background-color: transparent !important;
+            backdrop-filter: blur(10px);
+            position: absolute;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+          }
+          .navbar {
+          margin-left: 0;
+          margin-right: 0;
+          }
+          .navbar-nav .nav-link {
+              color: rgb(224, 224, 224);
+              font-size: 20px;
+              margin-right: 10px;
+          }
+      
+          .dropdown-item {
+              color:rgb(34, 186, 197);
+          }
+      
+          </style>
+      </head>
+      <body>
+        <!---------------top nav-------------->
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-light transparent-top-nav"
+          >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="../../assets/icons/cropd-lightblue-logoPP.png"
+                  alt="Logo"
+                  width="60"
+                  height="50"
+                  class="d-inline-block align-top me-2"
+                />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../pages/Products.html">PRODUCTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../pages/Services.html">SERVICES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../mypurse/mypurse.html">MY PURSE</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Hello, User
+                    </a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end"
+                      aria-labelledby="navbarDropdown"
+                      style="width: 200px"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../pages/profile.html"
+                          style="font-size: 20px"
+                          >Profile</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../pages/inbox.html"
+                          style="font-size: 20px"
+                          >Inbox</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../pages/notifications.html"
+                          style="font-size: 20px"
+                          >Notifications</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="../pages/setting.html"
+                          style="font-size: 20px"
+                          >Settings</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#" style="font-size: 20px"
+                          >Help & Support</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          style="font-size: 20px"
+                          id="logoutButton"
+                          >Logout</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      
+         <!-----cover photo------>
+         <section class="cover">
+           <div class="conatainer">
+               <img src="../../users/ByteBook/images/SCoverphoto.jpg" width="100%"  height="200">
+           </div>
+         </section>
       <!------Profile picture-->
       <section class="profile">
             <div class="profile">
@@ -82,8 +168,10 @@
                     <h5>Baguio City</h5>
                     <h5>0923 487 3489</h5>
                     <h5>ByteBook@gmail.com</h5>
+                    <a href="../../pages/inbox.html">
                     <input type="button" name="chat" value="Chat" style="width: 200px; border-radius: 20px; background-color: rgb(56, 173, 241);" >
-                </div>
+                  </a>
+                  </div>
                 <div class="col-sm-8">
                     <h2 class="text-primary">Information</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, illum. Omnis beatae, quibusdam impedit fugiat facere incidunt rem quod consectetur quo hic nemo nesciunt veniam exercitationem molestiae a numquam. Dicta?</p>
