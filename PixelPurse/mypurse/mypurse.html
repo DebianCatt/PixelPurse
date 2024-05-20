@@ -9,51 +9,111 @@
 </head>
 <body>
     <!---------------------Top nav--------------->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light transparent-top-nav">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img
-                  src="../assets/icons/cropd-lightblue-logoPP.png"
-                  alt="Logo"
-                  width="60"
-                  height="50"
-                  class="d-inline-block align-top me-2"
-                />
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">PRODUCTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">SERVICES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">MY PURSE</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Hello, User
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" style="width: 200px;">
-                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Profile</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Inbox</a></li>
-                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Notifications</a></li>
-                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Settings</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Help & Support</a></li>
-                    <li><a class="dropdown-item" href="#" style="font-size: 20px;">Logout</a></li>
-                </ul>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light transparent-top-nav"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../assets/icons/cropd-lightblue-logoPP.png"
+            alt="Logo"
+            width="60"
+            height="50"
+            class="d-inline-block align-top me-2"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Products.html">PRODUCTS</a>
             </li>
-            
-            </ul>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Services.html">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../mypurse/mypurse.html">MY PURSE</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Hello, User
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown"
+                style="width: 200px"
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../pages/profile.html"
+                    style="font-size: 20px"
+                    >Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../pages/inbox.html"
+                    style="font-size: 20px"
+                    >Inbox</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../pages/notifications.html"
+                    style="font-size: 20px"
+                    >Notifications</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../pages/setting.html"
+                    style="font-size: 20px"
+                    >Settings</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#" style="font-size: 20px"
+                    >Help & Support</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    style="font-size: 20px"
+                    id="logoutButton"
+                    >Logout</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
       <!------------------INVENTORY------------------------>
       <h2 class="text-center mt-5" style="font-size: 40px; color: rgb(0, 140, 255)">
@@ -63,44 +123,133 @@
       <div class="container-fluid mt-3">
     <div class="big-rectangle">
         <div class="text-center">
-            <p>hellp whatthe fuck is this</p>
+            <p>These are the products you've purchased and is now available for you to download anytime, Forever!</p>
         </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/200" class="card-img-top" alt="Product 1">
-            <div class="card-body">
-                <p class="card-price">Php 100</p>
-              <h5 class="card-title">Product 1</h5>
-              <p class="card-text">by Creator 1</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="row">
+          <!--Prod1----->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
             <div class="card">
-              <img src="https://via.placeholder.com/200" class="card-img-top" ">
-              <div class="card-body">
-                  <p class="card-price">Php 100</p>
-                <h5 class="card-title">Product 1</h5>
-                <p class="card-text">by Creator 1</p>
+              <a href="../products/Atomic Habits/Atomic-Habits-ebook.html">
+                <img
+                  src="../products/Atomic Habits/images/image1.png"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+              </a>
+              <!-- Download Icon -->
+              <a href="../downloads/Atomic-Habits-ebook.pdf" class="download-link">
+                <img
+                  src="../assets/icons/dlicon.png"
+                  class="download-icon"
+                  alt="Download Icon"
+                />
+              </a>
+              <div class="card-body p-0">
+                <div class="product-info">
+                  <h5 class="product-title mb-0">Atomic-Habits-ebook</h5>
+                  <p class="product-price mb-0">Php 100</p>
+                </div>
+                <div class="username">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/sampleuserimg2.jpg"
+                      alt="Profile Image"
+                      class="profile-img"
+                    />
+                    <a href="../users/Jepoy_Dizon/JepoyDizon.html" class="text-light">
+                      <p class="mb-0">Jepoy_DizonOfficial</p>
+                    </a>
+                  </div>
+                  <div class="mt-2 card-text">
+                    <img
+                      src="../assets/icons/verified-blue.png"
+                      class="icon-sm"
+                    />
+                    <span class="ms-1">Verified</span>
+                    <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                    <span class="ms-1">4.5 Trust Ratings</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         
-
+          <!--Prod2----->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 prodcard">
+            <div class="card">
+              <a href="../products/The-Little-Prince/The-Little-Prince.html">
+                <img
+                  src="../products/The-Little-Prince/images/image1.jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+              </a>
+              <!-- Download Icon -->
+              <a href="../downloads/The-Little-Prince-ebook.pdf" class="download-link">
+                <img
+                  src="../assets/icons/dlicon.png"
+                  class="download-icon"
+                  alt="Download Icon"
+                />
+              </a>
+              <div class="card-body p-0">
+                <div class="product-info">
+                  <h5 class="product-title mb-0">The Little Prince - Eb</h5>
+                  <p class="product-price mb-0">Php 100</p>
+                </div>
+                <div class="username">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/images/sampleuserimg2.jpg"
+                      alt="Profile Image"
+                      class="profile-img"
+                    />
+                    <a href="../users/Jepoy_Dizon/JepoyDizon.html" class="text-light">
+                      <p class="mb-0">Jepoy_DizonOfficial</p>
+                    </a>
+                  </div>
+                  <div class="mt-2 card-text">
+                    <img
+                      src="../assets/icons/verified-blue.png"
+                      class="icon-sm"
+                    />
+                    <span class="ms-1">Verified</span>
+                    <img src="../assets/icons/Rating.png" class="icon-sm ms-3" />
+                    <span class="ms-1">4.5 Trust Ratings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        
+        
       </div>
     </div>
   </div>
 
+  <hr class="invisible-separator my-4 mt-5" style="border:none; height: 10; background-color: transparent;">
 
       <!--------------------------FOOTER----------------------------------------------->
-      <div class="container mt-5">
-        <hr class="my-5 custom-hr" style="color: rgb(0, 140, 255)" />
-    </div>
+      <footer class="footer mt-auto py-3" style="background-color: rgb(151, 162, 170);">
+        <div class="container text-center">
+          <div class="mb-3">
+            <p>Contact Support?</p>
+          </div>
+            <!-- Icons -->
+            <div class="mb-3">
+              <a href="#" class="text-dark me-3"><img src="../../assets/icons/gmail.png" alt="email" style="width: 24px; height: 26px;"></a>
+              <a href="#" class="text-dark me-3"><img src="../../assets/icons/facebook.png" alt="facebook" style="width: 24px; height: 22px;"></a>
+              <a href="#" class="text-dark"><img src="../../assets/icons/instagram.png" alt="instagram" style="width: 24px; height: 24px;"></a>
+          </div>
+
+            Get in touch to our technical support team for help troubleshooting software issues and technical queries. 
+            PixelPurse dedicated to ensuring your experience with our products is seamless and enjoyable
+          </div>
+      </footer>
     
 
+    <script src="../assets/scripts/pageslogouthandler.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
