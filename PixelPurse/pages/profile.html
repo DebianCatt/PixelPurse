@@ -4,12 +4,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unlock your digital potential with PixelPurse!</title>
+    <link rel="stylesheet" href="../assets/stylesheets/profile.css">
     <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+
+    <style>
+
+
+/*-------------------top nav------------------------*/
+.transparent-top-nav {
+      background-color: transparent !important;
+      backdrop-filter: blur(10px);
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar {
+    margin-left: 0;
+    margin-right: 0;
+    }
+    .navbar-nav .nav-link {
+        color: rgb(224, 224, 224);
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .dropdown-item {
+        color:rgb(34, 186, 197);
+    }
+
+    </style>
 </head>
 <body>
-     
-  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"> </script>
+  <!---------------top nav-------------->
+  <nav
+      class="navbar navbar-expand-lg navbar-light bg-light transparent-top-nav"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../assets/icons/cropd-lightblue-logoPP.png"
+            alt="Logo"
+            width="60"
+            height="50"
+            class="d-inline-block align-top me-2"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Products.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Services.html">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../mypurse/mypurse.html">MY PURSE</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Hello, User
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown"
+                style="width: 200px"
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../pages/profile.html"
+                    style="font-size: 20px"
+                    >Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../pages/inbox.html"
+                    style="font-size: 20px"
+                    >Inbox</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../pages/notifications.html"
+                    style="font-size: 20px"
+                    >Notifications</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../pages/setting.html"
+                    style="font-size: 20px"
+                    >Settings</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#" style="font-size: 20px"
+                    >Help & Support</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    style="font-size: 20px"
+                    id="logoutButton"
+                    >Logout</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+   <!-----cover photo------>
+   <section class="cover">
+     <div class="conatainer">
+         <img src="../assets/images/SCoverphoto.jpg" width="100%"  height="200">
+     </div>
+   </section>
+   <!------Profile picture-->
+   <section class="profile">
+         <div class="profile">
+             <img src="../assets/images/sampleuserimg.jpg" style="border-radius: 200px;" width="200" height="200">
+             <img src="../assets/icons/verified-blue.png" width="30" style="position: relative; right: 25px; top: 20px;">
+             <div class="username" style="position: relative; left: 220px; bottom: 100px;">
+             <h1 style="font-weight: 700; font-size: x-large; color: rgb(19, 171, 221);">Hello i'm, <br> Juan! <br>@juan_delacruz</h4>
+              </div>
+         </div>
+   </section>
+ <!----contacts------>   
+ <section class="contacts">
+     <div class="container mt-3" style="position: relative;bottom: 150px; right: 90px;">
+         <div class="row">
+             <div class="col-sm-4">
+                 <h2 class="text-primary">Contacts</h2>
+                 <h5>Baguio City</h5>
+                 <h5>0923 487 3489</h5>
+                 <h5>jdc123@gmail.com</h5>
+
+             </div>
+             <div class="col-sm-8">
+                 <h2 class="text-primary">Information</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, illum. Omnis beatae, quibusdam impedit fugiat facere incidunt rem quod consectetur quo hic nemo nesciunt veniam exercitationem molestiae a numquam. Dicta?</p>
+             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+             </div> 
+         </div>
+     </div>
+
+     <!---Rating----->
+     <div class="rating" style="position: relative; left: 20px; bottom: 150px; font-weight: lighter;">
+         <img src="../assets/icons/Rating.png"  width="100px">
+         <div style="position: relative;left: 120px; bottom: 80px;">
+         <h1>4.8</h1>
+         </div>
+         <div style="position: relative; left: 180px; bottom: 130px;">
+         <h2>Trust Ratings</h2>
+         <h4>74 views</h4>
+         </div >
+       </div>
+     </div>
+       <!------------Services--------------->
+     <div class="container mt-5" style="position: relative; bottom: 220px;">
+       <div class="row">
+           <h2 class="text-primary">Services</h2>
+           <div class="col-3 mb-2">
+               <div class="card">
+                   <img src="../../services/Food-Product/images/Food Product.jpg" style="width: 260px; height: 260px;" class="card-img-top" alt="Service 1">
+                   <div class="card-body">
+                     <h5 class="card-title text-primary">Food product</h5>
+                     <p class="card-text">best advertisement for a food/drinks </p>
+                     <a href="../../services/Food-Product/Food-Product.html" class="btn btn-primary">Get Now</a>
+                   </div>  
+               </div>
+           </div>
+
+       </div>   
+     </div>
+
+<!--Products-->
+<div class="container mt-5" style="position: relative; bottom: 220px;">
+ <div class="row">
+     <h2 class="text-primary">Products</h2>
+     <div class="col-3 mb-2">
+         <div class="card">
+             <img src="../../products/The-Night-Circus/images/image1.jpg" style="width: 260px; height: 260px;" class="card-img-top" alt="Product 1">
+             <div class="card-body">
+               <h5 class="card-title text-primary">The Night Circus</h5>
+               <p class="card-text">By: Erin Morgenstern</p>
+               <a href="../../products/The-Night-Circus/The-Night-Circus.html" class="btn btn-primary">Buy Now</a>
+             </div>  
+         </div>
+     </div>
+      
+     
+   </div>                      
+ </div>   
+</div>
+
+
+
+
+
+
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"> </script>
+  <script src="../assets/scripts/pageslogouthandler.js"></script>
    
 </body>
 </html>
